@@ -1,0 +1,38 @@
+#quarta {
+
+    width: 300px;
+    border-top: #ffffff;
+    border-left: #ffffff;
+    background: #ffffff;
+
+}
+#menu ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    width: 100%;
+    float: left;
+    white-space: nowrap;
+
+}
+#menu ul li {
+    display: inline-block;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+a {
+
+    color: #bf003f;
+}
+a:hover{
+
+    background-color: #ffffff;
+}
+
+#terça{
+
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
