@@ -195,8 +195,21 @@
             // Questão 28
             $("#bt28").click(function () {
 
-                var cor = $("#paragrafo1").height();
-                alert(cor);
+                // var elemPai = $("#paragrafo1").parent();
+                // elemPai.css("border", "black 1px solid");
+                $("#paragrafo1").parent().css("border", "black 1px solid");
+            });
+
+            // Questão 29
+            $("#bt29").click(function () {
+
+                $("#paragrafo1").parents().css("border", "black 1px solid");
+            });
+
+            // Questão 30
+            $("#bt30").click(function () {
+
+                $("h1").children().css("border", "black 1px solid");
             });
 
 
