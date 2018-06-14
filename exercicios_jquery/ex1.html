@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-       <title>Title</title>
+       <title> Title </title>
 
     <style>
         .azul{
@@ -19,53 +19,187 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+
         $(document).ready(function () {
 
             // Questão 1
             $("#bt1").click(function () {
-                //digite aqui a ação para o clique no botão 1
+
                 var txt = $("header").text();
                 alert(txt);
             });
 
             // Questão 2
             $("#bt2").click(function () {
-                //digite aqui a ação para o clique no botão 1
+
                 var txt = $("header").html();
                 alert(txt);
             });
 
             // Questão 3
             $("#bt3").click(function () {
-                //digite aqui a ação para o clique no botão 1
+
                 var txt = $("#i1").val();
                 alert(txt);
             });
 
             // Questão 4
             $("#bt4").click(function () {
-                //digite aqui a ação para o clique no botão 1
+
                 var txt = $("A").attr("href");
                 alert(txt);
             });
 
             // Questão 5
             $("#bt5").click(function () {
-                //digite aqui a ação para o clique no botão 1
+
                 $("#paragrafo1").text("Novo texto do paragrafo");
             });
 
             // Questão 6
             $("#bt6").click(function () {
-                //digite aqui a ação para o clique no botão 1
+
                 $("#paragrafo2").html("<b>Novo texto do paragrafo</b>");
             });
 
             // Questão 7
             $("#bt7").click(function () {
-                //digite aqui a ação para o clique no botão 1
+
                 $("input").val("Novo valor do input");
             });
+
+            // Questão 8
+            $("#bt8").click(function () {
+
+                $("a").attr("href", "http://araquari.ifc.edu.br/");
+            });
+
+            // Questão 9
+            $("#bt9").click(function () {
+
+                $("img").attr('src', "apagada.jpg");
+            });
+
+            // Questão 10
+            $("#bt10").click(function () {
+
+                $("ol").append("<li> Quarto </li>");
+            });
+
+            // Questão 11
+            $("#bt11").click(function () {
+
+                $("ol").prepend("<li> Inicio: </li>");
+            });
+
+            // Questão 12
+            $("#bt12").click(function () {
+
+                $("#paragrafo1").prepend(" Inicio: ");
+            });
+
+            // Questão 13
+            $("#bt13").click(function () {
+
+                $("#paragrafo1").append(" fim. ");
+            });
+
+            // Questão 14
+            $("#bt14").click(function () {
+
+                $("h1").remove();
+            });
+
+            // Questão 15
+            $("#bt15").click(function () {
+
+                $("#conteudo-principal").empty();
+            });
+
+            // Questão 16
+            $("#bt16").click(function () {
+
+                $(".texto").remove();
+            });
+
+            // Questão 17
+            $("#bt17").click(function () {
+
+                $(".texto, .outro").remove();
+            });
+
+            // Questão 18
+            $("#bt18").click(function () {
+
+                $("#paragrafo1").addClass("azul");
+            });
+
+            // Questão 19
+            $("#bt19").click(function () {
+
+                $("#paragrafo2").addClass("importante");
+                $("#paragrafo2").addClass("vermelho");
+            });
+
+            // Questão 20
+            $("#bt20").click(function () {
+
+                $("#paragrafo1").removeClass("azul");
+            });
+
+            // Questão 21
+            $("#bt21").click(function () {
+
+                $("#paragrafo2").toggleClass("importante");
+            });
+
+            // Questão 22
+            $("#bt22").click(function () {
+
+                $(".outro").css("background-color", "green");
+            });
+
+            // Questão 23
+            $("#bt23").click(function () {
+
+                $("h1").css("border-style", "dotted");
+            });
+
+            // Questão 24
+            $("#bt24").click(function () {
+
+                var cor = $("#paragrafo1").css("color");
+                alert(cor);
+            });
+
+            // Questão 25
+            $("#bt25").click(function () {
+
+                $("#paragrafo2").css({"background-color": "green", "font-color": "blue","font-size": "25px", "padding":"15px"});
+            });
+
+            // Questão 26
+            $("#bt26").click(function () {
+
+                var cor = $("input").width();
+                alert(cor);
+            });
+
+            // Questão 27
+            $("#bt27").click(function () {
+
+                var cor = $("#paragrafo1").height();
+                alert(cor);
+            });
+
+            // Questão 28
+            $("#bt28").click(function () {
+
+                var cor = $("#paragrafo1").height();
+                alert(cor);
+            });
+
+
 
 
 
@@ -97,10 +231,10 @@
 
     <section id="conteudo-principal">
 
-        <img src="acesa.jpg" width="169">
+        <img src="acesa.jpg" width="169" height="220">
 
         <p class="texto" id="paragrafo1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores corporis deserunt dolor dolorem harum hic, illum iste, labore minima necessitatibus sed similique, ut. Expedita impedit ipsa iure nihil nulla.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores corporis deserunt dolor dolorem harum hic, illum iste, labore minima necessitatibus sed similique, ut. Expedita impedit ipsa iure nihil nulla
         </p>
 
         <label>
@@ -120,7 +254,9 @@
         <p class="outro">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cum, cupiditate deleniti eaque iusto magnam quae quos sunt suscipit? Asperiores ducimus earum, necessitatibus nisi perspiciatis praesentium quia sunt temporibus.
         </p>
-        <a href="http://ifc.edu.br" id="link1">IFC</a> <br>
+
+      <a href="http://ifc.edu.br" id="link1">IFC</a> <br>
+
         <button id="bt1">Questao 1</button>
         <button id="bt2">Questao 2</button>
         <button id="bt3">Questao 3</button>
@@ -152,8 +288,10 @@
         <button id="bt29">Questao 29</button>
         <button id="bt30">Questao 30</button>
     </section>
+
     <footer>
         Desenvolvido por <span class="destaque"> Rafael </span>.
     </footer>
-</body>
+
+ </body>
 </html>
